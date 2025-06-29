@@ -1,0 +1,45 @@
+Task:2
+
+mysql> select * from student where marks > 80;
++------------+---------+-------+-----------+
+| student_id | name    | marks | course_id |
++------------+---------+-------+-----------+
+|          1 | Mithuna |    98 |       101 |
+|          2 | pooja   |    99 |       102 |
+|          3 | Ani     |    98 |       103 |
+|          4 | Reshu   |    97 |       104 |
+|          5 | suba    |    96 |       105 |
+|          6 | Kerthu  |    97 |       106 |
+|          7 | Yoga    |    93 |       107 |
++------------+---------+-------+-----------+
+7 rows in set (0.01 sec)
+
+mysql> select * from course order by fee asc;
++-----------+----------------------+----------+
+| course_id | course_name          | fee      |
++-----------+----------------------+----------+
+|       101 | Java                 | 10080.00 |
+|       103 | Python               | 20160.00 |
+|       106 | Software Development | 21280.00 |
+|       102 | Mysql                | 22400.00 |
+|       107 | Data Science         | 22400.00 |
+|       104 | BlockChain           | 25760.00 |
+|       105 | CyberSecurity        | 33824.00 |
++-----------+----------------------+----------+
+7 rows in set (0.00 sec)
+
+mysql> select * from course where course_name like 'j%';
++-----------+-------------+----------+
+| course_id | course_name | fee      |
++-----------+-------------+----------+
+|       101 | Java        | 10080.00 |
++-----------+-------------+----------+
+1 row in set (0.01 sec)
+
+mysql> select * from employee where job='salesman' and salary > 20000;
++--------+----------+----------+----------+------------+---------+
+| emp_id | emp_name | job      | salary   | hiredate   | dept_id |
++--------+----------+----------+----------+------------+---------+
+|    102 | arun     | salesman | 25000.00 | 1981-02-20 |       2 |
++--------+----------+----------+----------+------------+---------+
+1 row in set (0.01 sec)

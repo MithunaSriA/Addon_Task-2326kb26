@@ -1,0 +1,24 @@
+Task:4
+mysql> select course_name,fee from course where fee>10000;
++----------------------+----------+
+| course_name          | fee      |
++----------------------+----------+
+| Java                 | 10080.00 |
+| Mysql                | 22400.00 |
+| Python               | 20160.00 |
+| BlockChain           | 25760.00 |
+| CyberSecurity        | 33824.00 |
+| Software Development | 21280.00 |
+| Data Science         | 22400.00 |
++----------------------+----------+
+7 rows in set (0.00 sec)
+
+mysql> select distinct salary from employee order by salary desc limit 1 offset 2;
++----------+
+| salary   |
++----------+
+| 25000.00 |
++----------+
+
+mysql> commit;
+Query OK, 0 rows affected (0.01 sec)
